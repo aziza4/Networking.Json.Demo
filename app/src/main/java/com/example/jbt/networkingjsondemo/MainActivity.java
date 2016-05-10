@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                 String result = "", line;
 
                 while((line = r.readLine()) != null) {
+
                     total += line.length();
                     publishProgress(""+(int)((total*100)/lenghtOfFile));
                     result += line;
